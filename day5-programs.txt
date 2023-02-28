@@ -1,0 +1,158 @@
+import random as r
+x="I Love Sweets"
+print(r.sample(x,2))
+
+
+a=[1,2,3,4,5,6]
+r.shuffle(a)
+print(a)
+
+
+a=[1,2,3,4,5,6]
+print(r.choice(a))
+
+b="Welcome Back"
+print(r.choice(b))
+
+
+a=r.random()
+print(a)
+print(r.randint(20,30))
+
+
+
+a=[10,20,30,40,50]
+print(r.choices(a,k=10))
+
+
+s="Hello good day"
+print(r.choices(s,k=3))
+print(r.uniform(5,10))
+
+z=dir(r)
+print(z)
+
+
+import calendar
+
+print("full calender")
+print(calendar.calendar(2022))
+
+print("particular month")
+print(calendar.month(2021,3))
+
+
+print("set first day of the month")
+calendar.setfirstweekday(calendar.FRIDAY)
+print(calendar.month(2021,12))
+
+
+
+import datetime
+a=datetime.datetime.now()
+print(a)
+sv=a.strftime("sy")
+fv=a.strftime("fv")
+
+print("year short version",sv)
+print("year full version",fv)
+
+
+
+def sample():
+    print("hello")
+    print("tej")
+
+sample()
+print("good")
+sample()
+
+
+def multi():
+    a=int(input("enter number"))
+    b=int(input("enter number"))
+    c=int(input("enter number"))
+    pro=a*b*c
+    print(pro)
+
+multi()
+
+def multi(n1,n2,n3):
+    pro=n1*n2*n3
+    print(pro)
+
+multi(3,4,5)
+
+def multi1(a,b,c):
+    pro=a*b*c
+    print(pro)
+
+n1=int(input())
+n2=int(input())
+n3=int(input())
+multi(n1,n2,n3)
+multi1(n1,n2,n3)
+
+
+def lem():
+    a=int(input("enter number of temples"))
+    print(a*7)
+lem()
+
+
+def fact(l):
+    for i in range(l//2):
+        if l%i==0:
+            c+=2
+    print(c)
+
+
+l=int(input("enter number to find factors"))
+fact(l)
+
+
+def table(num):
+    for i in range(1,21):
+        print(num,"*",i,"=",num*i)
+num=int(input())
+table(num)
+
+
+
+def sum_d(num):
+    sum1=0
+    while(num>0):
+        a=num%10
+        num=num//10
+        sum1+=a
+    print(sum1)
+num=int(input())
+sum_d(num)
+
+
+def display():
+    n=int(input("enter 1 to continue else any number"))
+    if n==1:
+        display()
+    else:
+        print("over")
+display()
+
+
+def fact(n):
+    if n==1:
+        return 1
+    return n*fact(n-1)
+n=int(input())
+v=fact(n)
+print(v)
+
+def add_sub(x,y):
+    sub=x-y
+    add=x+y
+    return add,sub
+a,b=add_sub(10,20)
+print(a,b)
+    
+    
+    

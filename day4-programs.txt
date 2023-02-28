@@ -1,0 +1,95 @@
+
+d={n:n*n for n in range(1,5)}
+print(d)
+
+
+#calculate product price for 5 units
+
+old={'rice':60,'dhaal':120,'oil':150}
+new={product:price*5 for (product,price) in old.items()}
+print(new)
+
+
+
+#with checks
+
+real={'sam':24,'angel':18,'kumar':35}
+new={name:age for (name,age) in real.items() if age>20}
+print(new)
+
+
+#create a list with 8 customers names and
+#display the dictionary which has customer names
+#along with discounts for them from a particular shop
+
+a=["mohan","sai","mopidevi"]
+import random
+d={names:random.randint(1,100) for names in a}
+print(d)
+
+stu_name=["mohan","sai","mopidevi","yuvi","raju"]
+stu_mark=[100,200,470,110,230]
+
+dic={(a,b) for (a,b) in zip(stu_name,stu_mark)}
+print(dic)
+a=[]
+for i in range(len(stu_name)):
+    a+=[random.randint(1,500)]
+    
+dic={(b,c) for (b,c) in zip(stu_name,a)}
+print(dic)
+
+
+print(" hii i'am 'mohan' ")
+s="MOHANSAI"
+v="mohansai"
+x="  uuuu  "
+
+print(v.upper())
+print(s.lower())
+print(v.capitalize())
+print(x.strip())
+print(s.split("A"))
+print(s.center(10,"9"))
+print(s.count("A"))
+print(s.endswith("I"))
+print(s.find("A"))
+print(s.rfind("A"))
+print(s.index("A"))
+x=10
+print(id(x))
+
+
+
+#program1
+a=input("enter a string")
+b=input("enter a character")
+print("yes" if b in a else "no")
+
+#program2
+a=input("enter a string")
+print("yes" if a[::-1]==a else "no")
+
+#program3
+a=input("enter a string")
+c=0
+for i in a:
+    if i==" ":
+        c+=1
+print(c)
+        
+ls=["A","E","I","O","U","a","e","i","o","u"]
+a=input()
+
+
+for i in a:
+    if i not in ls:
+        print(i)
+
+import math
+print(math.ceil(10.5))
+print(math.floor(10.5))
+print(math.sqrt(10))
+print(math.factorial(20))
+print(math.pow(12,2))
+print(math.fmod(10,2))
